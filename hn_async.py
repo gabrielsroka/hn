@@ -1,7 +1,7 @@
 import aiohttp
 import asyncio
 
-total = 10
+total = 10 # maximum is about 500
 url = 'https://hacker-news.firebaseio.com'
 
 async def main():
