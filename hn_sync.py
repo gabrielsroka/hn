@@ -1,6 +1,6 @@
 import requests
 
-total = 10
+total = 10 # maximum is about 500
 url = 'https://hacker-news.firebaseio.com'
 
 def main():
