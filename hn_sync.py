@@ -1,7 +1,7 @@
 import requests
 
 total = 10 # maximum is about 500
-url = 'https://hacker-news.firebaseio.com'
+url = 'https://hacker-news.firebaseio.com' # https://github.com/HackerNews/API
 
 def main():
     with requests.Session() as session:
