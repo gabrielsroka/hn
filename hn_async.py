@@ -2,7 +2,7 @@ import aiohttp
 import asyncio
 
 total = 10 # maximum is about 500
-url = 'https://hacker-news.firebaseio.com'
+url = 'https://hacker-news.firebaseio.com' # https://github.com/HackerNews/API
 
 async def main():
     async with aiohttp.ClientSession(url) as session:
