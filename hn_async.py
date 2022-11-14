@@ -22,8 +22,7 @@ async def fetch(session, url):
 
 from time import time
 s = time()
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())
 e = time()
 print(e - s)
 
