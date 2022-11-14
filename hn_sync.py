@@ -5,11 +5,9 @@ url = 'https://hacker-news.firebaseio.com' # https://github.com/HackerNews/API
 
 def main():
     with requests.Session() as session:
-        r = session.get(f'{url}/v0/topstories.json')
-        ids = r.json()
+        ids = session.get(f'{url}/v0/topstories.json').json()
         for i, id in enumerate(ids[:total], start=1):
-            r = session.get(f'{url}/v0/item/{id}.json')
-            item = r.json()
+            item = session.get(f'{url}/v0/item/{id}.json').json()
             if item:
                 print(f"{i:2}) {item['title']} | {item.get('url')}")
                 print(f"    https://news.ycombinator.com/item?id={item['id']} | {item['by']} | {item['score']}")
